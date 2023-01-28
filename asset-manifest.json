@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ArnabSingha/static/css/main.6e915765.css",
+    "main.js": "/ArnabSingha/static/js/main.36a7a620.js",
+    "static/media/header.png": "/ArnabSingha/static/media/header.13a0210d5b068658f791.png",
+    "static/media/Arnabimg3.png": "/ArnabSingha/static/media/Arnabimg3.9dfb5254a21f6f1c6522.png",
+    "index.html": "/ArnabSingha/index.html",
+    "main.6e915765.css.map": "/ArnabSingha/static/css/main.6e915765.css.map",
+    "main.36a7a620.js.map": "/ArnabSingha/static/js/main.36a7a620.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e915765.css",
+    "static/js/main.36a7a620.js"
+  ]
+}
