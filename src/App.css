@@ -1,0 +1,459 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.navbar{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+
+body{
+  background: #3C3B3F;
+  background: -webkit-linear-gradient(to right, #605C3C, #ea47ff);
+  background: linear-gradient(to right, #605C3C, #341e67);
+  background-color: white;
+}
+
+.homenav{
+  background-image: url('../public/img/header.png'); 
+  /* background: #3C3B3F;
+  background: -webkit-linear-gradient(to right, #605C3C, #ea47ff);
+  background: linear-gradient(to right, #605C3C, #341e67); */
+  
+  min-height: 100vh;
+}
+
+.homeimg1{
+  background-image: url('../public/img/Arnabimg3.png');
+  height: 53vh;
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: 7px 12px 30px rgb(249, 255, 83);
+}
+
+
+
+/* /////////////////////////////Projects/////////////////////////////////////////////// */
+
+
+#pro{
+  background-image: url('../public/img/header.png'); 
+}
+
+
+
+/* 
+.pro-grid{
+  padding-top: 12vh;
+  display: grid;
+  grid-template-rows: 0.6fr 1fr 1fr 1fr 0.6fr;
+  grid-template-columns:0.4fr 0.5fr 0.5fr 0.5fr 0.4fr;
+  justify-content: center;
+  gap: 20px;
+  height: 100vh;
+  width: 100%;
+  grid-template-areas:
+  "Top Top Top Top Top"
+  "barL col-A col-B col-C barR"
+  "barL col-A col-B col-C barR"
+  "barL col-A col-B col-C barR"
+  " foot foot foot foot foot";
+  ;
+}
+
+.col-A{
+  grid-area: col-A;
+  background-position:center ;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.col-B{
+  grid-area: col-B;
+  background-position:center ;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.col-C{
+  grid-area: col-C;
+  background-position:center ;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.proimg>a>img{
+  height: 100%;
+  width: 100%;
+}
+.proheader{
+  grid-area: Top;
+}
+.profooter{
+  grid-area: foot;
+}
+.proleftside{
+  grid-area: barL;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+}
+.proleftside>h1{
+  color: yellowgreen;
+  justify-content: center;
+  text-align: center;
+  font-size:40px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+}
+.proleftside>h3{
+   font-size:30px;
+   padding-left: 5px;
+}
+.proleftside>p{
+  color: #519259;
+  font-size: 28px;
+  padding-left: 5px;
+}
+.prorightside{
+  grid-area: barR;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+}
+.prorightside{
+  background-color: none;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.prorightside>h1,h3{
+  font-size: 34px;
+}
+.prorightside>p{
+  color: #519259;
+  font-size: 22px;
+  margin-top: 10px;
+}
+.proimg{
+  height:75%;
+}
+.proonetext{
+  height: 25%;
+}
+.proonetext>h2{
+  color: azure;
+  font-weight: lighter;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.btnp{
+  float: left;
+  padding: 10px;
+  border: double;
+  border-radius: 4px;
+  color: rgb(204, 53, 53);
+  text-align: center;
+  font-size: 16px;
+  margin: 12px 10px;
+}
+.btnp:hover{
+  background-color: rgb(250, 91, 125);
+  color: black;
+}
+
+.proheder{
+  width: auto;
+  height: auto;
+  grid-area: Top;
+  
+}
+
+.proheder>h3{
+  justify-content:center;
+  text-align: center;
+  font-size: 60px;
+}
+
+@media(max-width: 550px) {
+  
+  .pro-grid{
+      height: auto;
+      grid-template-columns:1fr 1fr;
+      grid-template-rows: 0.1fr 0.2fr 1fr  1fr  1fr 0.4fr;
+      grid-template-areas: 
+      "Top Top"
+      "barL barL"
+      "col-A col-A"
+      "col-B col-B"
+      "col-C col-C"
+      "barR  barR"
+      "foot  foot";
+      gap: 0px;
+      }
+      .proheder>h1{
+          padding-top: 0px;
+          font-size: 60px;
+         color: white;
+      }
+      .proheder{
+          position: relative;
+          top: 0%;
+          column-gap: 0px;
+      }
+      .proleftside{
+          box-shadow:none;     
+      }
+      .proleftside>p{
+         margin-bottom: 15px;
+      }
+      .prorightside>p{
+      padding-bottom: 40px;
+      }
+      .proimg>a>img{
+          height: 100%;
+          width: 100%;
+          padding-left: 30px;
+          padding-right: 30px;
+      }
+      .proimg{
+          background-position:center ;
+          background-size: contain;
+          background-repeat: no-repeat;
+      }
+      .proonetext{
+          height:10%;
+      }
+      
+      .colp{
+      height:70vh;
+      }
+
+
+      .homeimg1{
+      height: 27vh;
+      background-size: cover;
+      }
+
+  }
+
+ */
+
+/**************************************end***********************************************/
+
+
+/*************************************Contact us ****************************************/
+
+.contact{
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content{
+  text-align: center;
+  max-width: 80%;
+}
+.content>h2{
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.content>h3{
+ font-weight: bolder;
+ font-size: 20px;
+ color: rgb(255, 255, 255);
+}
+.container>p{
+  font-weight: lighter;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+
+}
+
+.container{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.contentinfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.box{
+  padding: 15px 0;
+  position: relative;
+  display: flex;
+}
+.box .icon{
+  height: 60px;
+  min-width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 20px;
+  border-radius: 1em;
+  max-width: 10px;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.text>h3{
+  font-weight:bolder;
+}
+.contactform{
+  width: 40%;
+  background: rgb(255, 255, 255);
+  padding: 40px;
+}
+.contactform>h2{
+  font-size: larger;
+  font-weight:1400;
+  color:rgb(8, 8, 8);
+}
+.inputext{
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+.inputext input{
+  width: 100%;
+  padding:5px 0;
+  font-size: 16px;
+  margin:10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none; 
+}
+textarea{
+  width: 100%;
+  padding:5px 0;
+  font-size: 16px;
+  margin:10px 0;
+  border: none;
+  border-bottom: 2px solid rgb(51, 51, 51);
+  outline: none;
+  resize: none;
+}
+
+.inputext span{
+  position:absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition:0.5s;
+  color: #666;
+
+}
+.contactform .inputext input:focus~span,
+.contactform .inputext input:valid~span,
+.contactform .inputext textarea:focus~span,
+.contactform .inputext textarea:valid~span{
+  color: rgb(255, 0, 21);
+  font-size: 12px;
+  transform: translateY(-20px );
+}
+
+.contactform .inputext input[type="submit"]{
+  width: 100px;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor:pointer;
+  padding:10px;
+  font-size: 10px;
+}
+@media screen and (max-width: 990px)
+{
+  #cont{
+      margin-top: 0;
+  }
+  .content{
+      width: auto;
+  }
+  .contact{
+      padding:50px;
+      height: auto;
+  }
+  .container{
+      flex-direction: column;
+  }
+  .contentinfo{
+      width: 100%;
+  }
+  .contactform{
+      width: 100%;
+  }
+  .text>p{
+      font-size: 12px;
+  }
+}
+
+
+
+
+/**************************************end***********************************************/
+
+/**************************************Aboutme*************************************************/
+
+.aboutmebox{
+  width: 80%;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.about1{
+  padding: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+
+
+/****************************************end****************************************************/
